@@ -246,6 +246,9 @@ body {
   margin-top: 10px;
   justify-content: center;
 }
+.footer-container .i:hover {
+  cursor: pointer;
+}
 .anchor {
   display: flex;
   gap: 40px;
