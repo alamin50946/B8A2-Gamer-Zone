@@ -1,13 +1,13 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@700;800&family=Work+Sans:wght@200;400;600;700;800&display=swap");
 
 body {
-  font-family: "Lato", sans-serif;
-  font-family: "Open Sans", sans-serif;
   font-family: "Work Sans", sans-serif;
+  /* font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif; */
 }
 :root {
   --primary-color: #ff42a5;
@@ -17,7 +17,7 @@ body {
 .banner {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   height: 130px;
 }
@@ -63,12 +63,22 @@ body {
   height: 56px;
 }
 /* header part start */
+
+/* header part end */
+
+/* main part start */
 .main-container {
   display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: none;
 }
+.main-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-section i {
   padding-right: 5px;
 }
@@ -76,16 +86,124 @@ body {
   background-color: var(--primary-color);
   border-radius: 48px;
   padding: 20px 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.main-container button {
+  margin-top: 20px;
+}
+.btn-2 {
+  margin-left: 10px;
+  background-color: #4ec5f7;
 }
 .main-section span {
   color: var(--font-color);
   font-weight: 500;
   font-size: 20px;
 }
+.main-h3 {
+  color: #0b0223;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+}
+.main-h1 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
+  font-weight: 800;
+  font-family: Work Sans;
+  margin: 0;
+}
+.main-img-section {
+  width: 50%;
+}
+.main-img-section img {
+  width: 650px;
+  height: 600px;
+}
+/* game part start */
+.game-section {
+  text-align: center;
+}
+.game-header {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+}
+.game-header span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.game-description {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+}
+.game-pic-container {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 20px;
+}
+.game-img {
+  width: 342px;
+  height: 400px;
+}
+.game-img img {
+  width: 100%;
+}
+.img-7 {
+  position: relative;
+}
 
-/* header part end */
+/* game part end */
+/* colage part */
+.colage-section {
+  display: flex;
+  max-width: 1300px;
+  margin: 130px auto;
+  align-items: center;
+}
+.colage-description {
+  width: 50%;
+  text-align: center;
+  padding: 100px;
+}
 
-/* main part start */
+.colage-pic-container {
+  width: 50%;
+}
+.colage-heading {
+  font-size: 48px;
+  font-weight: 700;
+}
+.colage-heading span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.primary-img {
+  position: relative;
+}
+.colage-pic-container img {
+  width: 84%;
+  margin-left: 100px;
+}
+
+.colage-pic-container .secondary-img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+}
 
 /* main part end */
 
@@ -102,6 +220,38 @@ body {
     align-items: center;
     height: 300px;
   }
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  .main-section {
+    width: 100%;
+  }
+  .main-img-section {
+    width: 100%;
+  }
+
+  .main-img-section img {
+    width: 300px;
+    height: 450px;
+  }
+  .main-section {
+    width: 100%;
+  }
+  .game-pic-container,
+  .colage-section {
+    flex-direction: column;
+  }
+  .game-img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .colage-pic-container .secondary-img {
+    width: 80px;
+    height: 80px;
+    left: -20px;
+    bottom: -20px;
+  }
 }
 
 /* responsive for medium/tablet device */
@@ -110,5 +260,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .game-pic-container,
+  .colage-section {
+    flex-direction: column;
+  }
+  .game-img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .colage-pic-container .secondary-img {
+    width: 80px;
+    height: 80px;
+    left: -20px;
+    bottom: -20px;
   }
 }
