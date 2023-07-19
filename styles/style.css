@@ -160,7 +160,6 @@ body {
 }
 .img-container {
   position: relative;
-  /* display: inline-block; */
 }
 .overlay {
   position: absolute;
@@ -226,6 +225,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-left: 50px;
 }
 .icon-section div:hover {
   border: 2px solid rgb(16, 219, 16);
