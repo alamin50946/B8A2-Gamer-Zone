@@ -158,8 +158,18 @@ body {
 .game-img img {
   width: 100%;
 }
-.img-7 {
+.img-container {
   position: relative;
+  /* display: inline-block; */
+}
+.overlay {
+  position: absolute;
+  top: 1100px;
+  left: 830px;
+  opacity: 0;
+}
+.overlay:hover {
+  opacity: 1;
 }
 
 /* game part end */
