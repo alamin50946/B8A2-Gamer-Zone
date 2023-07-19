@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@700;800&family=Work+Sans:wght@200;400;600;700;800&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+:root {
+  --primary-color: #ff42a5;
+  --font-color: #534c64;
+}
+/* header part start */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 130px;
+}
+.banner img {
+  width: 86.041px;
+  height: 40px;
+}
+.banner-title span {
+  font-size: 45px;
+  font-weight: 700;
+}
+.banner .g {
+  color: var(--primary-color);
+}
+.banner-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.banner-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.banner-nav a {
+  text-decoration: none;
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-nav i {
+  padding-left: 10px;
+}
+
+.banner-btn {
+  border: none;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  width: 200px;
+  height: 56px;
+}
+/* header part start */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-section i {
+  padding-right: 5px;
+}
+.primary-btn {
+  background-color: var(--primary-color);
+  border-radius: 48px;
+  padding: 20px 40px;
+}
+.main-section span {
+  color: var(--font-color);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* header part end */
+
+/* main part start */
+
+/* main part end */
+
+/* footer part start */
+
+/* footer part end */
+
+/* responsive for mobile/small device */
+@media screen and (max-width: 425px) {
+  .banner,
+  .banner-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+}
+
+/* responsive for medium/tablet device */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
