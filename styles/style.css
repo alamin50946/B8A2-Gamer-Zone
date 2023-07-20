@@ -73,6 +73,9 @@ body {
   padding: 0 100px;
 }
 .banner-title {
+  background-image: url("../images/group-14.png");
+  background-position: center;
+  background-size: cover;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -347,7 +350,9 @@ body {
   }
   .banner-title {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    justify-content: center;
+    padding: 10px 0 10px 40px;
     margin-top: 50px;
   }
   .banner-img-container {
@@ -378,6 +383,10 @@ body {
     width: 100%;
     position: relative;
     margin-top: 50px;
+  }
+  .secondary-img {
+    width: 200px;
+    height: 200px;
   }
 
   .icon-section {
@@ -413,6 +422,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
   }
+  .footer-paragraph {
+    margin-top: 20px;
+  }
 }
 
 /* responsive for medium/tablet device */
@@ -428,7 +440,8 @@ body {
   }
   .banner-title {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    padding: 40px 20px 40px 150px;
     margin-top: 80px;
   }
   .banner-img-container {
@@ -472,5 +485,8 @@ body {
   }
   .icon img {
     width: 30%;
+  }
+  .footer-paragraph {
+    margin-top: 20px;
   }
 }
