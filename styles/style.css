@@ -421,6 +421,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    font-size: 16px;
+    font-weight: 500;
   }
   .footer-paragraph {
     margin-top: 20px;
