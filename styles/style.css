@@ -165,34 +165,33 @@ body {
 }
 .img-container {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
-.img-container:hover {
-  opacity: 1; 
-  
-  -
+
+.backgroung {
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  padding: 8px;
+  background: rgb(196, 185, 228);
+
+  border-radius: 10px;
+
+  opacity: 0;
 }
-.backgroung{
+.backgroung:hover {
+  opacity: 1;
+}
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(92, 74, 74, 0.301); 
-  opacity: 0;
-}
-.backgroung:hover{
-  opacity: 1;
-}
-.overlay {
-  position: absolute;
-  top: 920px;
-  left: 730px;
- padding: 10px;
+  padding: 10px;
   height: 7%;
   border-radius: 20px;
   background: rgb(199, 162, 162);
-  opacity: 0;
+  opacity: 1;
 }
 .overlay:hover {
   opacity: 1;
